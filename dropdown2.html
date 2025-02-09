@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        ul{
+            box-sizing: border-box;
+            list-style-type: none;
+            display: inline-block;
+            width: 500px;
+            height: 40px;
+            background-color: rgb(120,120,120);
+            padding: 0;
+        }
+        li{
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 100%;
+            text-align: center;
+            
+
+        }
+        a{
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            padding-top: 10px
+            
+        }
+        a:hover{
+            background-color:green;
+        }
+        .content{
+            width: 100px;
+            position: absolute;
+            display: none;
+            top: 100%;
+            background-color: darkgray;
+            
+        }
+        li:hover .content{
+        
+            display: block;
+        }
+     
+
+        .content a:hover{
+            
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>The dropdown on hover</h1>
+    <nav>
+        <ul>
+            <li><a href="" class="home">HOME</a>
+                <div class="content">
+                    <a href="">More</a>
+                    <a href="">Alumni</a>
+                    <a href="">Administration</a>
+                </div>
+                <li><a href="">ABOUT US</a><div class="content">
+                    <a href="">Location</a>
+                    <a href="">Admission</a>
+                    <a href="">Fees</a>
+                </div></li>
+
+                <li> <a href="">CONTACT</a>
+                    <div class="content">
+                        <a href="">Phone</a>
+                        <a href="">Gmail</a>
+                        <a href="">Twitter</a>
+                    </div></li>
+                <li> <a href="">NEWS</a>
+                    <div class="content">
+                        <a href="">Scholarship</a>
+                        <a href="">Awards</a>
+                        <a href="">Games</a>
+                    </div></li>
+                
+        </ul>
+    </nav>
+</body>
+</html>
